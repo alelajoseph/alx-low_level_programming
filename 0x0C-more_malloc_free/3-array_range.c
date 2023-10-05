@@ -12,6 +12,7 @@ int *array_range(int min, int max)
 	int *new_array;
 	int diff, i;
 
+/*If min > max, return NULL*/
 	if (min > max)
 		return (NULL);
 
