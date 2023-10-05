@@ -12,7 +12,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 	char *new_str;
 	unsigned int i = 0, lens1 = 0, lens2 = 0;
-
+//If the function fails, it should return NULL
 	if (s1 == NULL)
 		s1 = "";
 
@@ -24,7 +24,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	while (s2[lens2])
 		lens2++;
-
+//If n is greater or equal to the length of s2 then use the entire string s2
 	if (n >= lens2)
 		n = lens2;
 
