@@ -11,10 +11,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned int i = 0;
 	char *space;
-
+/*If nmemb or size is 0, then _calloc returns NULL*/
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 
+/*If malloc fails, then _calloc returns NULL*/
 	space = malloc(nmemb * size);
 	if (space == NULL)
 		return (NULL);
