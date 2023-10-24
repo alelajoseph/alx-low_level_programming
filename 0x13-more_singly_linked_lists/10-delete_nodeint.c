@@ -12,7 +12,7 @@ unsigned int i = 0;
 
 if (temp_node && (index == 0))
 {
-*head = temp_node->next
+*head = temp_node->next;
 free(temp_node);
 return (1);
 }
